@@ -1,0 +1,1 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.zyd.learn.spring.springstarter.UserAutoConfig
