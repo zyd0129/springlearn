@@ -9,6 +9,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+/**
+ * 自动装载原理  @EnableAutoConfig 导入了一个@Import(AutoConfigurationImportSelector.class), 这是一个实现了ImportSelector接口的导入
+ * 这个类会返还 一个类全限定名数组，会讲他们放入容器。 字符串数组会扫描所有包下WEB-INFO下的spring.factory下的EnableAutoConfiguration的值
+ */
 @SpringBootApplication
 public class SpringPrincipleApplication implements ApplicationRunner {
     @Autowired
