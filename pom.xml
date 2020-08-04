@@ -21,6 +21,7 @@
         <module>sc-common</module>
         <module>sc-eureka-server</module>
         <module>sc-gateway</module>
+        <module>camunda-learn</module>
     </modules>
 
 
